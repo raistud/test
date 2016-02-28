@@ -28,7 +28,7 @@
     <ion-header-bar class="bar-stable"">
         <div class="row">
             <div class="col">
-                <a class="button icon-left ion-chevron-left button-clear button-dark" style="color:rgb(204,8,13)">Back</a>
+                <a class="button icon-left ion-chevron-left button-clear button-dark" style="color:rgb(204,8,13)" ui-sref="home" >Back</a>
             </div>
             <div class="col">
                 <button class="button button-assertive" style="background-color:rgb(204,8,13);width:80%">
@@ -37,15 +37,11 @@
             </div>
             <div class="col">
                 <div class="buttons color-orange">
-                    <Label class="button" style="background-color:rgb(254,199,82);width:100%">
-                        <a class="" ng-click="" style="color:rgb(0,0,0)">
-                            <i class="ion-ios-cart-outline"></i>
-                        </a>
-                    &pound;{{ctrl.totalPrice}}   {{ctrl.totalQty}}</Label>
-                </div>
-
-
-                
+                    <button class="button" style="background-color:rgb(254,199,82);width:100%" ui-sref="checkout">                        
+                            <i class="ion-ios-cart-outline"></i>                        
+                    &pound;{{ctrl.totalPrice}}   {{ctrl.totalQty}}
+                    </button>
+                </div>                
             </div>
         </div>
         <div class="row">

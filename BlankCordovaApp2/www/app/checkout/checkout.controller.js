@@ -6,8 +6,7 @@ angular
 .controller('checkout.controller', ['$scope', checkout]);
 
 function checkout($scope) {
-	
-    alert('checkout');
+    
 	
 
 }
