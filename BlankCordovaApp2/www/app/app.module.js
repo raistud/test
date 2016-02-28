@@ -8,6 +8,7 @@ angular.module('PrasadApp', ['ui.router'])
           url: "/home",         
           templateUrl: "app/home/home.template.html"
       })
+
 });
 angular.module('HelloApp', ['PrasadApp']);
 
