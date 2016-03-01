@@ -1,2 +1,7 @@
 ﻿
-    <div>Checkout page work in progress   </div>
+    <div>Checkout page work in progress </div>
+<ul>
+    <li ng-repeat="item in ctrl.cartItems">
+        {{item.name}}  {{item.qty}}
+    </li>
+</ul>

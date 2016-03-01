@@ -1,9 +1,7 @@
 //(function(){
 //'use strict';
-angular.module('PrasadApp', ['ui.router'])
+var module = angular.module('PrasadApp', ['ui.router'])
 .config(function ($stateProvider, $urlRouterProvider) {
-
-
     $stateProvider
         .state('home', {
             url: '/home',
@@ -16,14 +14,14 @@ angular.module('PrasadApp', ['ui.router'])
             templateUrl: '/app/order/placeOrder.template.html',
             controller: 'placeOrder.controller',
             controllerAs: 'ctrl',
-            scope: false
+            scope: true
         })
         .state('checkout', {
             url: '/checkout',            
             templateUrl: '/app/checkout/checkout.template.html',
             controller: 'checkout.controller',
             controllerAs: 'ctrl',
-            scope: false
+            scope: true
     })
     $urlRouterProvider.otherwise('/home');
 
@@ -33,3 +31,14 @@ angular.module('PrasadApp', ['ui.router'])
 
 //})
 
+
+
+module.service('retrieveData', function () {
+    this.savedData = {}
+    this.set = function (data) {       
+        this.savedData = data;
+    }
+    this.get = function () {        
+        return this.savedData;
+    }    
+});

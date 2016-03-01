@@ -3,11 +3,11 @@
 
 angular
 .module ('PrasadApp')
-.controller('checkout.controller', ['$scope', checkout]);
+.controller('checkout.controller', ['$scope', '$rootScope', 'retrieveData', checkout]);
 
-function checkout($scope) {
-    
-	
+function checkout($scope, $rootScope, retrieveData) {
+    var ctrl = this;
+    ctrl.cartItems = retrieveData.get();   
 
 }
 	

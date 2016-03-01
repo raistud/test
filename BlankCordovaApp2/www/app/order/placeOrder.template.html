@@ -37,7 +37,7 @@
             </div>
             <div class="col">
                 <div class="buttons color-orange">
-                    <button class="button" style="background-color:rgb(254,199,82);width:100%" ui-sref="checkout">                        
+                    <button class="button" style="background-color:rgb(254,199,82);width:100%" ng-click="ctrl.goToCheckout()" >                        <!--ui-sref="checkout"-->
                             <i class="ion-ios-cart-outline"></i>                        
                     &pound;{{ctrl.totalPrice}}   {{ctrl.totalQty}}
                     </button>
