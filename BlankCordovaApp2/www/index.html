@@ -23,20 +23,29 @@
 
     <script src="scripts/index.js"></script>
     <script type="text/javascript" src="scripts/angular/angular.js"></script>
-    <script type="text/javascript" src="scripts/angular/angular-ui-router.min.js"></script>
-    <script type="text/javascript" src="app/app.module.js"></script>
-    <!--<script type="text/javascript" src="app/app.service.js"></script>-->
+    <script type="text/javascript" src="scripts/angular/angular-ui-router.min.js"></script>    
+    <script type="text/javascript" src="scripts/angular/angular-animate.min.js"></script>
+    <script type="text/javascript" src="scripts/angular/angular-sanitize.min.js"></script>  
+      
+    
+    <script type="text/javascript" src="scripts/angular/ionic.js"></script>    
+    <script type="text/javascript" src="scripts/angular/ionic-angular.js"></script>
+
+    <script type="text/javascript" src="app/app.module.js"></script>    
     <script type="text/javascript" src="app/order/placeOrder.controller.js"></script>
     <script type="text/javascript" src="app/order/placeOrder.directive.js"></script>
     <script type="text/javascript" src="app/home/home.controller.js"></script>
     <script type="text/javascript" src="app/home/home.directive.js"></script>
     <script type="text/javascript" src="app/checkout/checkout.controller.js"></script>
     <script type="text/javascript" src="app/checkout/checkout.directive.js"></script>
+    <script type="text/javascript" src="app/login/login.directive.js"></script>
+    <script type="text/javascript" src="app/login/login.controller.js"></script>
 
     <div ng-app="PrasadApp" >
         <ion-pane>
             <ui-view class="has-header"></ui-view> <!--Todo : change from ui-view to <ion-nav-view -->
         </ion-pane>
     </div>
-    <div ui-view></div></body>
+        <!--<div ui-view></div>-->
+</body>
 </html>

@@ -1,6 +1,6 @@
 //(function(){
 //'use strict';
-var module = angular.module('PrasadApp', ['ui.router'])
+var module = angular.module('PrasadApp', ['ui.router','ionic'])
 .config(function ($stateProvider, $urlRouterProvider) {
     $stateProvider
         .state('home', {
@@ -13,6 +13,14 @@ var module = angular.module('PrasadApp', ['ui.router'])
             //template: '<div class="padding"><h2>Order</h2><button class="button button-assertive" ui-sref="home">To home</button></div>'
             templateUrl: '/app/order/placeOrder.template.html',
             controller: 'placeOrder.controller',
+            controllerAs: 'ctrl',
+            scope: true
+        })
+        .state('login', {
+            url: '/login',
+            //template: '<div class="padding"><h2>Order</h2><button class="button button-assertive" ui-sref="home">To home</button></div>'
+            templateUrl: '/app/login/login.template.html',
+            controller: 'login.controller',
             controllerAs: 'ctrl',
             scope: true
         })
