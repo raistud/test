@@ -39,7 +39,7 @@
             </div>
             <div class="col col-30">
                 <div class="buttons color-orange">
-                    <button class="button" style="background-color:rgb(254,199,82);width:100%" ng-click="ctrl.goToCheckout()" >                        
+                    <button class="button" style="background-color:rgb(254,199,82);width:100%" ng-click="ctrl.goToCheckout()" ng-disabled="ctrl.cartItems.length == 0" >                        
                             <i class="ion-ios-cart-outline"></i>                        
                     &pound;{{ctrl.totalPrice}}   {{ctrl.totalQty}}
                     </button>
